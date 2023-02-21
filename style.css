@@ -1,0 +1,100 @@
+*{
+  margin: 0%;
+  padding: 0%;
+}
+
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(90deg, rgb(1, 19, 30), rgb(9, 88, 148), rgb(1, 19, 30), rgb(9, 88, 148), rgb(1, 19, 30), rgb(9, 88, 148), rgb(1, 19, 30));
+  /* background: linear-gradient(90deg, rgb(221, 22, 171), rgb(240, 216, 3)); */
+  background-attachment: fixed;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.wrapper div {
+  width: 65px;
+  height: 65px;
+  border: 5px solid rgb(255, 255, 255);
+  position: absolute;
+}
+
+.wrapper div:nth-child(1) {
+  top: 10%;
+  left: 30%;
+  animation: square 5s linear infinite;
+}
+
+.wrapper div:nth-child(2) {
+  top: 20%;
+  left: 50%;
+  animation: square 8s linear infinite;
+}
+
+.wrapper div:nth-child(3) {
+  top: 8%;
+  left: 70%;
+  animation: square 7s linear infinite;
+}
+
+.wrapper div:nth-child(4) {
+  top: 80%;
+  left: 6%;
+  animation: square 6s linear infinite;
+}
+
+.wrapper div:nth-child(5) {
+  top: 50%;
+  left: 80%;
+  animation: square 4s linear infinite;
+}
+
+.wrapper div:nth-child(6) {
+  top: 80%;
+  left: 90%;
+  animation: square 13s linear infinite;
+}
+.wrapper div:nth-child(7) {
+  top: 4%;
+  left: 91%;
+  animation: square 12s linear infinite;
+}
+
+.wrapper div:nth-child(8) {
+  top: 80%;
+  left: 40%;
+  animation: square 5s linear infinite;
+}
+.wrapper div:nth-child(9) {
+  top: 10%;
+  left: 5%;
+  animation: square 13s linear infinite;
+}
+
+.wrapper div:nth-child(10) {
+  top: 82%;
+  left: 60%;
+  animation: square 9s linear infinite;
+}
+
+.wrapper div:nth-child(11) {
+  top: 45%;
+  left: 20%;
+  animation: square 14s linear infinite;
+}
+@keyframes square{
+  0%{
+    transform: scale(0) translateY(0) rotate(0);
+    opacity: 1;
+  }
+  100%{
+    transform: scale(1.2) translateY(-90px) rotate(360deg) ;
+    opacity: 0;
+  }
+}
